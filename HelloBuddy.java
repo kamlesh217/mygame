@@ -103,7 +103,7 @@ public class HelloBuddy {
 
 	private static void gameIntro() {
 		System.out.println("                   "+"WELCOME TO THE GAME"+"                    ");
-		System.out.println(" In This Game We Will Gives You 5 Chances To Guess The Exect Number");		
+		System.out.println(" In This Game We Will Gives You Unlimited Chances To Guess The Exect Number");		
 	}
 
 }
