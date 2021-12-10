@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HelloBuddy {
+public class Guessgame {
 	
 	public static void main(String[] args) {
 		Scanner sc= new Scanner(System.in);
