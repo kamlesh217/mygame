@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Guessgame {
-	
+	static int level=0;
 	public static void main(String[] args) {
 		Scanner sc= new Scanner(System.in);
 	
@@ -15,14 +15,9 @@ public class Guessgame {
 		System.out.println("Your Address");
 		String Address= sc.next();	
 	  
-        setGameLevel();
-        
-
-
-
-
-		
-        int level= sc.nextInt();
+        GameLevel();
+       setLevel();
+      //  int level= sc.nextInt();
         
         System.out.println("Playey's Name: "+ name);
         System.out.println("Playey's Age:  "+ Age);
@@ -30,6 +25,17 @@ public class Guessgame {
         
         gamePrivate(level);
             
+	  }
+
+	  static void setLevel(){
+		Scanner sc= new Scanner(System.in);
+		level= sc.nextInt();
+         if(level>3 || level<=0){
+			 System.out.println("please enter valid input");
+			 GameLevel();
+			 setLevel();
+		 }
+
 	  }
 
 	private static int startGame() {
@@ -97,7 +103,7 @@ public class Guessgame {
 		
 	}
 
-	private static void setGameLevel() {
+	private static void GameLevel() {
 		Scanner sc= new Scanner(System.in);
 		  System.out.println("Choose Your Game Level");
 		  System.out.println("For Easy Enter 1");
