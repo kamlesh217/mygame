@@ -17,6 +17,11 @@ public class Guessgame {
 	  
         setGameLevel();
         
+
+
+
+
+		
         int level= sc.nextInt();
         
         System.out.println("Playey's Name: "+ name);
