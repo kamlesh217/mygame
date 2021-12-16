@@ -12,14 +12,19 @@ public class Guessgame {
 		System.out.println("Your Name");
 		Console Name= System.console();
 		String name= Name.readLine();
-		System.out.println("Enter your password");
-		Console Pass= System.console();
-		char[] password= Pass.readPassword();
 		System.out.println("Your Age");
 		int Age= sc.nextInt();
 		System.out.println("Your Address");
 		String Address= sc.next();	
-	  
+	     
+
+
+
+
+
+
+
+		 
         GameLevel();
        setLevel();
       //  int level= sc.nextInt();
